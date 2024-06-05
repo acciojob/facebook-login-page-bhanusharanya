@@ -1,111 +1,81 @@
-/*  your css code here. If applicable */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
 .container {
     display: flex;
-    width: 900px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    border-radius: 8px;
-    overflow: hidden;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: space-between;
 }
 
 .left {
-    flex: 1;
-    padding: 50px;
-    background-color: #1877f2;
-    color: #fff;
+    width: 50%;
+    padding: 20px;
 }
 
-.logo {
-    font-size: 56px;
-    font-weight: bold;
-    margin-bottom: 20px;
+.left img {
+    width: 300px;
 }
 
-.description {
+.left h2 {
     font-size: 24px;
-    line-height: 1.5;
+    color: #1877f2;
 }
 
 .right {
-    flex: 1;
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 40%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .login-form {
-    width: 100%;
-    max-width: 350px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
-.input-field {
-    width: 100%;
-    padding: 14px;
-    margin: 10px 0;
-    border: 1px solid #dddfe2;
+.login-form input {
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 16px;
 }
 
-.login-btn {
-    width: 100%;
-    padding: 14px;
+.login-form button {
+    padding: 12px;
+    margin-bottom: 10px;
     background-color: #1877f2;
+    color: white;
     border: none;
     border-radius: 4px;
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 16px;
     cursor: pointer;
-    margin-top: 10px;
 }
 
-.login-btn:hover {
-    background-color: #166fe5;
+.login-form button.signup {
+    background-color: #42b72a;
 }
 
-.forgot-link {
-    display: block;
-    margin-top: 14px;
+.login-form a {
     color: #1877f2;
+    text-align: center;
+    margin-bottom: 10px;
     text-decoration: none;
     font-size: 14px;
 }
 
-.forgot-link:hover {
-    text-decoration: underline;
-}
-
-hr {
+.login-form hr {
     border: none;
-    border-top: 1px solid #dddfe2;
+    border-top: 1px solid #ddd;
     margin: 20px 0;
-}
-
-.create-btn {
-    width: 100%;
-    padding: 14px;
-    background-color: #42b72a;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 17px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.create-btn:hover {
-    background-color: #36a420;
 }
